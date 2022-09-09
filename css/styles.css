@@ -8,6 +8,7 @@
     --main-bcg-color: #FFFFFF;
     --secondary-bcg-color: #2F303A;
     --additional-bcg-color: #F5F4FA;
+    --border-color: #ECECEC;
     --btn-active: #188CE8;
     --main-font: "Roboto", sans-serif;
     --logo-font: "Raleway", sans-serif;
@@ -62,6 +63,9 @@ button{
 }
 
 /* Header */
+.header{
+    border-bottom: 1px solid var(--border-color);
+}
 .menu{
     display: flex;
     align-items: center;
@@ -125,21 +129,33 @@ button{
 .contact-link:focus{
     color: var(--accent-color);
 }
+
 /* Main index.html */
 /* Герой */
+
 .hero-section{
     background-color: var(--secondary-bcg-color);
 }
+.hero{
+    padding: 200px 0px;
+}
 .hero-title{
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    max-width: 696px;
+
     color: var(--white-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
 }
 .main-button{
+    margin-right: auto;
+    margin-left: auto;
+
     color: var(--white-text-color);
     background-color: var(--accent-color);
     font-weight: 700;
