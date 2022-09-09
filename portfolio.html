@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio - Портфоліо</title>
   </head>
   <body>
     <header class="header">
-      <nav>
+      <div class="container">
+        <nav>
         <a href="./index.html" lang="en" class="logo light-theme link"><span class="accent">Web</span>Studio</a>
         <ul class="nav-list list">
           <li>
@@ -35,11 +37,13 @@
           <a href="tel:+380961111111" class="contact-link link">+38 096 111 11 11</a>
         </li>
       </ul>
+      </div>
     </header>
 
    <main>
-    <section class="portfolio">
-        <h1 class="visually-hidden">Роботи</h1>
+    <section class="section">
+      <div class="container">
+           <h1 class="visually-hidden">Роботи</h1>
     <ul class="filter-list list">
         <li><button type="button" class="filter">Усі</button></li>
         <li><button type="button" class="filter">Веб-сайти</button></li>
@@ -111,11 +115,13 @@
                         </a>
         </li>
     </ul>
+      </div>
     </section>
    </main>
 
      <footer class="footer">
-      <a href="./index.html" lang="en" class="logo dark-theme link"><span class="accent">Web</span>Studio</a>
+      <div class="container">
+         <a href="./index.html" lang="en" class="logo dark-theme link"><span class="accent">Web</span>Studio</a>
       <address>
         <ul class="adress-list list">
           <li class="address-list-item">
@@ -133,6 +139,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
