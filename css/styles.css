@@ -9,6 +9,7 @@
     --secondary-bcg-color: #2F303A;
     --additional-bcg-color: #F5F4FA;
     --border-color: #ECECEC;
+    --portfolio-border: #EEEEEE;
     --btn-active: #188CE8;
     --main-font: "Roboto", sans-serif;
     --logo-font: "Raleway", sans-serif;
@@ -44,6 +45,10 @@ ul{
 }
 .list{
     list-style: none;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .visually-hidden {
   position: absolute;
@@ -174,15 +179,14 @@ button{
     background-color: var(--btn-active);
 }
 /* Переваги */
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .advanteges{
     display: flex;
 }
-.advanteges>.list{
+.advanteges>.item{
     flex-basis: calc((100% - 90px) / 4);
+}
+.advanteges>.item:not(:last-child){
+    margin-right: 30px;
 }
 .advanteges-title{
     margin-bottom: 10px;
@@ -256,10 +260,9 @@ img{
     justify-content: center;
     margin-bottom: 34px;
 }
-.filter-list:not(:last-child){
+.filter-item:not(:last-child){
     margin-right: 8px;
 }
-
 .filter{
     padding: 6px 22px;
     color: var(--primary-text-color);
@@ -271,9 +274,7 @@ img{
     text-align: center;
     border-width: 0;
     border-radius: 4px;
-    background-color: tomato;
 }
-
 .filter:hover,
 .filter:focus{
     color: var(--white-text-color);
@@ -284,7 +285,19 @@ img{
     display: flex;
     flex-wrap: wrap;
 }
+.portfolio-list-item{
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.portfolio-list-item:nth-child(3n+3){
+    margin-right: 0;
+}
+.portfolio-list-item:nth-last-child(-n+3){
+    margin-bottom: 0;
+}
 .portfolio-list-title{
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -295,6 +308,12 @@ img{
 }
 .portfolio-list-link{
     color: inherit;
+}
+.portfolio-block{
+    padding: 20px 24px;
+    border-right: 1px solid var(--portfolio-border);
+    border-bottom: 1px solid var(--portfolio-border);
+    border-left: 1px solid var(--portfolio-border);
 }
 .portfolio-list-description{
     color: var(--secondary-text-color);
@@ -315,14 +334,12 @@ img{
 
 .address-list-item{
     margin: 0;
-    background-color: teal;
 }
 .address-list-item:not(:last-child){
     margin-bottom: 9px;
 }
 .address{
     line-height: 1.71;
-    background-color: tomato;
 }
 .address-link{
     color: var(--white-text-color);
