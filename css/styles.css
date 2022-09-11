@@ -332,9 +332,6 @@ img{
     color: var(--white-text-color);
 }
 
-.address-list-item{
-    margin: 0;
-}
 .address-list-item:not(:last-child){
     margin-bottom: 9px;
 }
