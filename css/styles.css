@@ -34,7 +34,7 @@ ul{
     padding: 0;
 }
 .container{
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 15px;
     margin-right: auto;
     margin-left: auto;
